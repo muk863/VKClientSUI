@@ -31,3 +31,9 @@ struct GroupText: ViewModifier {
     }
 }
 
+struct ModifierList: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .listStyle(.plain)
+    }
+}

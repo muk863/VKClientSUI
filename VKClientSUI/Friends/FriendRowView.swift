@@ -1,5 +1,5 @@
 //
-//  GroupCellView.swift
+//  FriendRowView.swift
 //  VKClientSUI
 //
 //  Created by username on 04.12.2021.
@@ -7,26 +7,24 @@
 
 import SwiftUI
 
-struct GroupCellView: View {
+struct FriendRowView: View {
+    var friend: Friend
     
     var body: some View {
         
         HStack {
             AvatarImage {
-                Image("cats")
+                Image(friend.avatar)
             }
             Spacer()
             VStack(alignment: .leading) {
-                Text("Cats").modifier(GroupText())
+                Text(friend.name).modifier(NameText())
+                Text(friend.surname).modifier(NameTwoText())
             }
             Spacer()
         }
-        .border(Color.blue, width: 1)
+//        .border(Color.gray, width: 1)
     }
 }
 
-struct GroupCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupCellView()
-    }
-}
+

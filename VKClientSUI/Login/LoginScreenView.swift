@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginScreenView.swift
 //  VKClientSUI
 //
 //  Created by username on 28.11.2021.
@@ -8,27 +8,26 @@
 import SwiftUI
 import Combine
 
-struct ContentView: View {
+struct LoginScreenView: View {
     
     @State private var login: String = ""
     @State private var password: String = ""
     
     @State private var shouldShowLogo: Bool = true
     
+    @State private var showIncorrectCredentialsAlert: Bool = false
+    @Binding var showFriendsView: Bool
+    
     private let keyboardIsOnPublisher = Publishers.Merge(
         NotificationCenter.default.publisher(for: UIResponder.keyboardWillHideNotification)
             .map { _ in true },
-        
         NotificationCenter.default.publisher(for: UIResponder.keyboardWillChangeFrameNotification)
             .map { _ in false }
     )
-    
         .removeDuplicates()
     
     var body: some View {
-        
         ZStack {
-            
             GeometryReader { geometry in
                 Image("VK")
                     .resizable()
@@ -53,6 +52,8 @@ struct ContentView: View {
                             Spacer()
                             TextField("Enter login", text: $login)
                                 .frame(maxWidth: 150)
+                                .keyboardType(.emailAddress)
+                                .autocapitalization(.none)
                         }
                         
                         HStack {
@@ -87,11 +88,25 @@ struct ContentView: View {
         }
         
         .onTapGesture {
-            self.endEditing()        }
+            self.endEditing()
+        }
+        
+        .alert(isPresented: $showIncorrectCredentialsAlert) {
+            Alert(
+                title: Text("Warning"),
+                message: Text("Incorrect password or login, try again!"),
+                dismissButton: .cancel()
+            )
+        }
+        .navigationBarHidden(true)
     }
     
     private func onLoginPressed() {
-        
+        if login == "1" && password == "1" {
+            self.showFriendsView = true
+        } else {
+            self.showIncorrectCredentialsAlert = true
+        }
     }
     
     private func endEditing() {
@@ -100,14 +115,10 @@ struct ContentView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginScreenView(showFriendsView: .constant(false))
     }
 }
 
-extension UIApplication {
-    func endEditing() {
-        self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
+
