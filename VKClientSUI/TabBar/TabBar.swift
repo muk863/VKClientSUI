@@ -10,13 +10,15 @@ import SwiftUI
 struct TabBar: View {
     var body: some View {
         TabView{
-            FriendsView()
+
+            FriendsView(viewModel: FriendViewModel(FriendAPI()))
+                .navigationBarTitle("", displayMode: .inline)
                 .tabItem {
                     Image(systemName: "person.2.fill")
                     Text("Friends")
                 }
-            
-            GroupsView()
+            GroupsView(viewModel: GroupViewModel(GroupAPI()))
+                .navigationBarTitle("", displayMode: .inline)
                 .tabItem {
                     Image(systemName: "person.3.fill")
                     Text("Groups")
@@ -29,11 +31,5 @@ struct TabBar: View {
                 }
         }
         
-    }
-}
-
-struct TabBar_Previews: PreviewProvider {
-    static var previews: some View {
-        TabBar()
     }
 }

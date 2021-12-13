@@ -27,7 +27,7 @@ struct GroupText: ViewModifier {
     func body(content: Content) -> some View {
         content
             .foregroundColor(Color.blue)
-            .font(.largeTitle)
+            .font(.system(size: 15, weight: .light))
     }
 }
 

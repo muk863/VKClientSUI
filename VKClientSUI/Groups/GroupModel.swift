@@ -7,13 +7,23 @@
 
 import Foundation
 
-class Group: Identifiable {
-    internal init(name: String, avatar: String) {
-        self.name = name
-        self.avatar = avatar
-    }
+struct Groups: Codable {
+    let response: GroupResponse
+}
 
-    let id: UUID = UUID()
-    let name: String
-    let avatar: String
+struct GroupResponse: Codable {
+    let count: Int
+    let items: [GroupItem]
+}
+
+class GroupItem: Codable, Identifiable {
+    var id: Int = 0
+    var name: String = ""
+    var imageURL: String = ""
+    var membersCount: Int = 0
+
+    enum CodingKeys: String, CodingKey {
+        case id, name
+        case imageURL = "photo_100"
+    }
 }

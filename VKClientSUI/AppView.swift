@@ -9,27 +9,19 @@ import SwiftUI
 
 struct AppView: View {
     
-    @State private var shouldShowFriendsView: Bool = false
+    @ObservedObject var session = Session.instance
     
     var body: some View {
         NavigationView {
             HStack {
-                LoginScreenView(showFriendsView: $shouldShowFriendsView)
-                
-                NavigationLink(isActive: $shouldShowFriendsView) {
-
-//                    FriendsView()
-                    TabBar()
-                } label: {
+                VKLoginWebView()
+                NavigationLink(destination: TabBar(),
+                               isActive: $session.isAuthorized)
+                {
                     EmptyView()
+                    
                 }
             }
         }
-    }
-}
-
-struct AppView_Previews: PreviewProvider {
-    static var previews: some View {
-        AppView()
     }
 }

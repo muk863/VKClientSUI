@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D18A24F2767978900251A4E /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A24E2767978900251A4E /* Session.swift */; };
+		3D18A25327679ACC00251A4E /* FriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A25227679ACC00251A4E /* FriendAPI.swift */; };
+		3D18A25527679AE700251A4E /* GroupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A25427679AE700251A4E /* GroupAPI.swift */; };
+		3D18A2572767A07700251A4E /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A2562767A07700251A4E /* FriendViewModel.swift */; };
+		3D5A21B12767A9CB005A9677 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */; };
+		3D5A21B32767AA03005A9677 /* GroupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A21B22767AA03005A9677 /* GroupPageView.swift */; };
 		3D7C3BB2275B8E9600D62A1E /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */; };
 		3D7C3BB4275BC99A00D62A1E /* GroupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */; };
 		3D7C3BB6275BCA2B00D62A1E /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3BB5275BCA2B00D62A1E /* Builder.swift */; };
@@ -21,12 +27,21 @@
 		3D897814275FF9A100F363F9 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D897813275FF9A100F363F9 /* FriendsView.swift */; };
 		3D89781C275FFCAA00F363F9 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89781B275FFCAA00F363F9 /* TabBar.swift */; };
 		3D89781E275FFF1000F363F9 /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D89781D275FFF1000F363F9 /* GroupsView.swift */; };
-		3D897822276004B300F363F9 /* FriendPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D897821276004B300F363F9 /* FriendPhotoView.swift */; };
+		3D897822276004B300F363F9 /* FriendPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D897821276004B300F363F9 /* FriendPageView.swift */; };
 		3D8978242760056300F363F9 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8978232760056300F363F9 /* FriendModel.swift */; };
 		3D8978262760074000F363F9 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8978252760074000F363F9 /* GroupModel.swift */; };
+		3DA6077D27668C7E00E65532 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6077C27668C7E00E65532 /* Alamofire */; };
+		3DA6078027668C9800E65532 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6077F27668C9800E65532 /* Kingfisher */; };
+		3DA6078227668F1F00E65532 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6078127668F1F00E65532 /* VKLoginWebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D18A24E2767978900251A4E /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		3D18A25227679ACC00251A4E /* FriendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAPI.swift; sourceTree = "<group>"; };
+		3D18A25427679AE700251A4E /* GroupAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAPI.swift; sourceTree = "<group>"; };
+		3D18A2562767A07700251A4E /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
+		3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		3D5A21B22767AA03005A9677 /* GroupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPageView.swift; sourceTree = "<group>"; };
 		3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRowView.swift; sourceTree = "<group>"; };
 		3D7C3BB5275BCA2B00D62A1E /* Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
@@ -42,9 +57,10 @@
 		3D897813275FF9A100F363F9 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		3D89781B275FFCAA00F363F9 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		3D89781D275FFF1000F363F9 /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
-		3D897821276004B300F363F9 /* FriendPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoView.swift; sourceTree = "<group>"; };
+		3D897821276004B300F363F9 /* FriendPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPageView.swift; sourceTree = "<group>"; };
 		3D8978232760056300F363F9 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		3D8978252760074000F363F9 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
+		3DA6078127668F1F00E65532 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,12 +68,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA6078027668C9800E65532 /* Kingfisher in Frameworks */,
+				3DA6077D27668C7E00E65532 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D18A24D2767976C00251A4E /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				3D18A24E2767978900251A4E /* Session.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 		3D84258E2753A932000B5408 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +105,7 @@
 			children = (
 				3D84259A2753A932000B5408 /* VKClientSUIApp.swift */,
 				3D89780F275FB74800F363F9 /* AppView.swift */,
+				3D18A24D2767976C00251A4E /* Session */,
 				3D897816275FFB6100F363F9 /* Login */,
 				3D897817275FFB7B00F363F9 /* Friends */,
 				3D897819275FFBC300F363F9 /* Groups */,
@@ -112,6 +139,7 @@
 		3D897816275FFB6100F363F9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3DA6078127668F1F00E65532 /* VKLoginWebView.swift */,
 				3D84259C2753A932000B5408 /* LoginScreenView.swift */,
 			);
 			path = Login;
@@ -120,10 +148,12 @@
 		3D897817275FFB7B00F363F9 /* Friends */ = {
 			isa = PBXGroup;
 			children = (
-				3D897813275FF9A100F363F9 /* FriendsView.swift */,
-				3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */,
-				3D897821276004B300F363F9 /* FriendPhotoView.swift */,
 				3D8978232760056300F363F9 /* FriendModel.swift */,
+				3D18A2562767A07700251A4E /* FriendViewModel.swift */,
+				3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */,
+				3D897813275FF9A100F363F9 /* FriendsView.swift */,
+				3D897821276004B300F363F9 /* FriendPageView.swift */,
+				3D18A25227679ACC00251A4E /* FriendAPI.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -139,9 +169,12 @@
 		3D897819275FFBC300F363F9 /* Groups */ = {
 			isa = PBXGroup;
 			children = (
+				3D8978252760074000F363F9 /* GroupModel.swift */,
+				3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */,
 				3D89781D275FFF1000F363F9 /* GroupsView.swift */,
 				3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */,
-				3D8978252760074000F363F9 /* GroupModel.swift */,
+				3D5A21B22767AA03005A9677 /* GroupPageView.swift */,
+				3D18A25427679AE700251A4E /* GroupAPI.swift */,
 			);
 			path = Groups;
 			sourceTree = "<group>";
@@ -186,6 +219,10 @@
 			dependencies = (
 			);
 			name = VKClientSUI;
+			packageProductDependencies = (
+				3DA6077C27668C7E00E65532 /* Alamofire */,
+				3DA6077F27668C9800E65532 /* Kingfisher */,
+			);
 			productName = VKClientSUI;
 			productReference = 3D8425972753A932000B5408 /* VKClientSUI.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +251,10 @@
 				Base,
 			);
 			mainGroup = 3D84258E2753A932000B5408;
+			packageReferences = (
+				3DA6077B27668C7E00E65532 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				3DA6077E27668C9800E65532 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 3D8425982753A932000B5408 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -240,14 +281,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D18A2572767A07700251A4E /* FriendViewModel.swift in Sources */,
 				3D897814275FF9A100F363F9 /* FriendsView.swift in Sources */,
+				3D18A24F2767978900251A4E /* Session.swift in Sources */,
+				3D18A25527679AE700251A4E /* GroupAPI.swift in Sources */,
 				3D8978242760056300F363F9 /* FriendModel.swift in Sources */,
+				3D5A21B32767AA03005A9677 /* GroupPageView.swift in Sources */,
+				3DA6078227668F1F00E65532 /* VKLoginWebView.swift in Sources */,
 				3D897812275FD33200F363F9 /* UIApplication+Extensions.swift in Sources */,
 				3D7C3BB2275B8E9600D62A1E /* FriendRowView.swift in Sources */,
+				3D5A21B12767A9CB005A9677 /* GroupViewModel.swift in Sources */,
 				3D84259D2753A932000B5408 /* LoginScreenView.swift in Sources */,
 				3D897810275FB74800F363F9 /* AppView.swift in Sources */,
-				3D897822276004B300F363F9 /* FriendPhotoView.swift in Sources */,
+				3D897822276004B300F363F9 /* FriendPageView.swift in Sources */,
 				3D7C3BB8275BCAC100D62A1E /* Modifier.swift in Sources */,
+				3D18A25327679ACC00251A4E /* FriendAPI.swift in Sources */,
 				3D89781E275FFF1000F363F9 /* GroupsView.swift in Sources */,
 				3D89780C275FB04100F363F9 /* NewsView.swift in Sources */,
 				3D7C3BB4275BC99A00D62A1E /* GroupRowView.swift in Sources */,
@@ -459,6 +507,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DA6077B27668C7E00E65532 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		3DA6077E27668C9800E65532 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DA6077C27668C7E00E65532 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DA6077B27668C7E00E65532 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		3DA6077F27668C9800E65532 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DA6077E27668C9800E65532 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D84258F2753A932000B5408 /* Project object */;
 }

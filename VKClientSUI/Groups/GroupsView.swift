@@ -8,21 +8,19 @@
 import SwiftUI
 
 struct GroupsView: View {
-    private var groups: [Group] = [
-    Group(name: "Cats", avatar: "cats")
-    ]
+    @ObservedObject var viewModel: GroupViewModel
+    
+    init(viewModel: GroupViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        List(groups) { group in
+        List(viewModel.groups) { group in
+            NavigationLink(destination: GroupPageView(group: group)) {
                 GroupRowView(group: group)
+            }
         }
-            .modifier(ModifierList())
-            .navigationBarHidden(false)
-    }
-}
-
-struct GroupsView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupsView()
+        .modifier(ModifierList())
+        .onAppear { viewModel.fetch() }
     }
 }
