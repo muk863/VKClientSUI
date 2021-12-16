@@ -11,7 +11,6 @@
 		3D18A25327679ACC00251A4E /* FriendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A25227679ACC00251A4E /* FriendAPI.swift */; };
 		3D18A25527679AE700251A4E /* GroupAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A25427679AE700251A4E /* GroupAPI.swift */; };
 		3D18A2572767A07700251A4E /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D18A2562767A07700251A4E /* FriendViewModel.swift */; };
-		3D5A21B12767A9CB005A9677 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */; };
 		3D5A21B32767AA03005A9677 /* GroupPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5A21B22767AA03005A9677 /* GroupPageView.swift */; };
 		3D7C3BB2275B8E9600D62A1E /* FriendRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */; };
 		3D7C3BB4275BC99A00D62A1E /* GroupRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */; };
@@ -33,6 +32,7 @@
 		3DA6077D27668C7E00E65532 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6077C27668C7E00E65532 /* Alamofire */; };
 		3DA6078027668C9800E65532 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6077F27668C9800E65532 /* Kingfisher */; };
 		3DA6078227668F1F00E65532 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6078127668F1F00E65532 /* VKLoginWebView.swift */; };
+		3DC4AB7C276B433900D900B4 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4AB7B276B433900D900B4 /* GroupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,6 @@
 		3D18A25227679ACC00251A4E /* FriendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendAPI.swift; sourceTree = "<group>"; };
 		3D18A25427679AE700251A4E /* GroupAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAPI.swift; sourceTree = "<group>"; };
 		3D18A2562767A07700251A4E /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
-		3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		3D5A21B22767AA03005A9677 /* GroupPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPageView.swift; sourceTree = "<group>"; };
 		3D7C3BB1275B8E9600D62A1E /* FriendRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRowView.swift; sourceTree = "<group>"; };
 		3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRowView.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		3D8978232760056300F363F9 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		3D8978252760074000F363F9 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		3DA6078127668F1F00E65532 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
+		3DC4AB7B276B433900D900B4 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				3D8978252760074000F363F9 /* GroupModel.swift */,
-				3D5A21B02767A9CB005A9677 /* GroupViewModel.swift */,
+				3DC4AB7B276B433900D900B4 /* GroupViewModel.swift */,
 				3D89781D275FFF1000F363F9 /* GroupsView.swift */,
 				3D7C3BB3275BC99900D62A1E /* GroupRowView.swift */,
 				3D5A21B22767AA03005A9677 /* GroupPageView.swift */,
@@ -290,10 +290,10 @@
 				3DA6078227668F1F00E65532 /* VKLoginWebView.swift in Sources */,
 				3D897812275FD33200F363F9 /* UIApplication+Extensions.swift in Sources */,
 				3D7C3BB2275B8E9600D62A1E /* FriendRowView.swift in Sources */,
-				3D5A21B12767A9CB005A9677 /* GroupViewModel.swift in Sources */,
 				3D84259D2753A932000B5408 /* LoginScreenView.swift in Sources */,
 				3D897810275FB74800F363F9 /* AppView.swift in Sources */,
 				3D897822276004B300F363F9 /* FriendPageView.swift in Sources */,
+				3DC4AB7C276B433900D900B4 /* GroupViewModel.swift in Sources */,
 				3D7C3BB8275BCAC100D62A1E /* Modifier.swift in Sources */,
 				3D18A25327679ACC00251A4E /* FriendAPI.swift in Sources */,
 				3D89781E275FFF1000F363F9 /* GroupsView.swift in Sources */,
