@@ -33,6 +33,8 @@
 		3DA6078027668C9800E65532 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 3DA6077F27668C9800E65532 /* Kingfisher */; };
 		3DA6078227668F1F00E65532 /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6078127668F1F00E65532 /* VKLoginWebView.swift */; };
 		3DC4AB7C276B433900D900B4 /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4AB7B276B433900D900B4 /* GroupViewModel.swift */; };
+		3DF6E0B4276CE31000C6C654 /* TouchGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6E0B3276CE31000C6C654 /* TouchGesture.swift */; };
+		3DF6E0B7276CE48600C6C654 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6E0B6276CE48600C6C654 /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,8 @@
 		3D8978252760074000F363F9 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		3DA6078127668F1F00E65532 /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
 		3DC4AB7B276B433900D900B4 /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
+		3DF6E0B3276CE31000C6C654 /* TouchGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchGesture.swift; sourceTree = "<group>"; };
+		3DF6E0B6276CE48600C6C654 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 				3D897819275FFBC300F363F9 /* Groups */,
 				3D897818275FFBA800F363F9 /* News */,
 				3D89781A275FFC8B00F363F9 /* TabBar */,
+				3DF6E0B5276CE46100C6C654 /* LikeButton */,
 				3D8978202760036A00F363F9 /* Builder */,
 				3D89781F2760032D00F363F9 /* Modifiers */,
 				3D897815275FFB4B00F363F9 /* Extentions */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3D897811275FD33200F363F9 /* UIApplication+Extensions.swift */,
+				3DF6E0B3276CE31000C6C654 /* TouchGesture.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -201,6 +207,14 @@
 				3D7C3BB5275BCA2B00D62A1E /* Builder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		3DF6E0B5276CE46100C6C654 /* LikeButton */ = {
+			isa = PBXGroup;
+			children = (
+				3DF6E0B6276CE48600C6C654 /* LikeButton.swift */,
+			);
+			path = LikeButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +298,8 @@
 				3D18A2572767A07700251A4E /* FriendViewModel.swift in Sources */,
 				3D897814275FF9A100F363F9 /* FriendsView.swift in Sources */,
 				3D18A24F2767978900251A4E /* Session.swift in Sources */,
+				3DF6E0B4276CE31000C6C654 /* TouchGesture.swift in Sources */,
+				3DF6E0B7276CE48600C6C654 /* LikeButton.swift in Sources */,
 				3D18A25527679AE700251A4E /* GroupAPI.swift in Sources */,
 				3D8978242760056300F363F9 /* FriendModel.swift in Sources */,
 				3D5A21B32767AA03005A9677 /* GroupPageView.swift in Sources */,

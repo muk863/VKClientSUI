@@ -18,8 +18,14 @@ struct FriendPageView: View {
                         
             Spacer()
             VStack(alignment: .leading) {
+                Spacer().frame(height: 50.0)
+                
+                LikeButton()
+                
                 Text(friend.firstName).modifier(NameText())
                 Text(friend.lastName).modifier(NameTwoText())
+                
+                Spacer()
             }
             Spacer()
         }.padding()
